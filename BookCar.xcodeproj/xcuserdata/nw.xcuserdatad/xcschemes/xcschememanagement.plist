@@ -7,7 +7,25 @@
 		<key>BookCar.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>21</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CFD2507123F39F7A003ED4E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFD2508C23F39F94003ED4E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFD2509723F39F94003ED4E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

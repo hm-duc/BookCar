@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "NavigationBarController.h"
 @interface ViewController ()
 
 @end
@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UINavigationBar *navigation = [self.navigationController navigationBar];
+    [navigation setBarTintColor:[UIColor colorWithRed:0 green:1 blue:0.2 alpha:0.5]];
 }
-
 
 @end

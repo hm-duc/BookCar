@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA374D16D016BE65C837E7D6 /* libPods-BookCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */; };
+		CF0FD2A223FBA67500EA6153 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */; };
+		CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB1E7DF23FBE06600498563 /* NavigationBarController.m */; };
 		CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507623F39F7A003ED4E7 /* AppDelegate.m */; };
 		CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */; };
 		CFD2507D23F39F7A003ED4E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507C23F39F7A003ED4E7 /* ViewController.m */; };
@@ -14,28 +17,14 @@
 		CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2508123F39F93003ED4E7 /* Assets.xcassets */; };
 		CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2508323F39F93003ED4E7 /* LaunchScreen.storyboard */; };
 		CFD2508823F39F93003ED4E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2508723F39F93003ED4E7 /* main.m */; };
-		CFD2509223F39F94003ED4E7 /* BookCarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2509123F39F94003ED4E7 /* BookCarTests.m */; };
-		CFD2509D23F39F94003ED4E7 /* BookCarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2509C23F39F94003ED4E7 /* BookCarUITests.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		CFD2508E23F39F94003ED4E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CFD2506A23F39F7A003ED4E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFD2507123F39F7A003ED4E7;
-			remoteInfo = BookCar;
-		};
-		CFD2509923F39F94003ED4E7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CFD2506A23F39F7A003ED4E7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CFD2507123F39F7A003ED4E7;
-			remoteInfo = BookCar;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		801BB9B759ED025629C8DDBA /* Pods-BookCar-BookCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9977D8ACBF328D128385A661 /* Pods-BookCar-BookCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.release.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFB1E7DE23FBE06600498563 /* NavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarController.h; sourceTree = "<group>"; };
+		CFB1E7DF23FBE06600498563 /* NavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarController.m; sourceTree = "<group>"; };
 		CFD2507223F39F7A003ED4E7 /* BookCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD2507523F39F7A003ED4E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFD2507623F39F7A003ED4E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,16 +33,17 @@
 		CFD2507B23F39F7A003ED4E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CFD2507C23F39F7A003ED4E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CFD2507F23F39F7A003ED4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CFD2508123F39F93003ED4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFD2508123F39F93003ED4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BookCar/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		CFD2508423F39F93003ED4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFD2508623F39F93003ED4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFD2508723F39F93003ED4E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CFD2508D23F39F94003ED4E7 /* BookCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD2509123F39F94003ED4E7 /* BookCarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookCarTests.m; sourceTree = "<group>"; };
 		CFD2509323F39F94003ED4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFD2509823F39F94003ED4E7 /* BookCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD2509C23F39F94003ED4E7 /* BookCarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookCarUITests.m; sourceTree = "<group>"; };
 		CFD2509E23F39F95003ED4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2FE839E3671AE3F05642F8C /* Pods-BookCar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar.release.xcconfig"; path = "Target Support Files/Pods-BookCar/Pods-BookCar.release.xcconfig"; sourceTree = "<group>"; };
+		D45C1502DBC0FE503A57D8B3 /* Pods-BookCar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar.debug.xcconfig"; path = "Target Support Files/Pods-BookCar/Pods-BookCar.debug.xcconfig"; sourceTree = "<group>"; };
+		F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BookCar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,26 +51,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFD2508A23F39F94003ED4E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFD2509523F39F94003ED4E7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				BA374D16D016BE65C837E7D6 /* libPods-BookCar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11105E981B9C58288CC8E88C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D45C1502DBC0FE503A57D8B3 /* Pods-BookCar.debug.xcconfig */,
+				D2FE839E3671AE3F05642F8C /* Pods-BookCar.release.xcconfig */,
+				801BB9B759ED025629C8DDBA /* Pods-BookCar-BookCarUITests.debug.xcconfig */,
+				9977D8ACBF328D128385A661 /* Pods-BookCar-BookCarUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		834A6A15B9FC7764407589A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CFD2506923F39F7A003ED4E7 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +84,8 @@
 				CFD2509023F39F94003ED4E7 /* BookCarTests */,
 				CFD2509B23F39F94003ED4E7 /* BookCarUITests */,
 				CFD2507323F39F7A003ED4E7 /* Products */,
+				11105E981B9C58288CC8E88C /* Pods */,
+				834A6A15B9FC7764407589A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,8 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				CFD2507223F39F7A003ED4E7 /* BookCar.app */,
-				CFD2508D23F39F94003ED4E7 /* BookCarTests.xctest */,
-				CFD2509823F39F94003ED4E7 /* BookCarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +100,9 @@
 		CFD2507423F39F7A003ED4E7 /* BookCar */ = {
 			isa = PBXGroup;
 			children = (
+				CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */,
+				CFB1E7DE23FBE06600498563 /* NavigationBarController.h */,
+				CFB1E7DF23FBE06600498563 /* NavigationBarController.m */,
 				CFD2507523F39F7A003ED4E7 /* AppDelegate.h */,
 				CFD2507623F39F7A003ED4E7 /* AppDelegate.m */,
 				CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */,
@@ -144,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFD250A123F39F95003ED4E7 /* Build configuration list for PBXNativeTarget "BookCar" */;
 			buildPhases = (
+				9A26E9B799B48D173E0C7884 /* [CP] Check Pods Manifest.lock */,
 				CFD2506E23F39F7A003ED4E7 /* Sources */,
 				CFD2506F23F39F7A003ED4E7 /* Frameworks */,
 				CFD2507023F39F7A003ED4E7 /* Resources */,
+				6F5EC40643047EF71F4F6EE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,42 +157,6 @@
 			productName = BookCar;
 			productReference = CFD2507223F39F7A003ED4E7 /* BookCar.app */;
 			productType = "com.apple.product-type.application";
-		};
-		CFD2508C23F39F94003ED4E7 /* BookCarTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFD250A423F39F95003ED4E7 /* Build configuration list for PBXNativeTarget "BookCarTests" */;
-			buildPhases = (
-				CFD2508923F39F94003ED4E7 /* Sources */,
-				CFD2508A23F39F94003ED4E7 /* Frameworks */,
-				CFD2508B23F39F94003ED4E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFD2508F23F39F94003ED4E7 /* PBXTargetDependency */,
-			);
-			name = BookCarTests;
-			productName = BookCarTests;
-			productReference = CFD2508D23F39F94003ED4E7 /* BookCarTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CFD2509723F39F94003ED4E7 /* BookCarUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CFD250A723F39F95003ED4E7 /* Build configuration list for PBXNativeTarget "BookCarUITests" */;
-			buildPhases = (
-				CFD2509423F39F94003ED4E7 /* Sources */,
-				CFD2509523F39F94003ED4E7 /* Frameworks */,
-				CFD2509623F39F94003ED4E7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CFD2509A23F39F94003ED4E7 /* PBXTargetDependency */,
-			);
-			name = BookCarUITests;
-			productName = BookCarUITests;
-			productReference = CFD2509823F39F94003ED4E7 /* BookCarUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,14 +169,6 @@
 				TargetAttributes = {
 					CFD2507123F39F7A003ED4E7 = {
 						CreatedOnToolsVersion = 11.3.1;
-					};
-					CFD2508C23F39F94003ED4E7 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = CFD2507123F39F7A003ED4E7;
-					};
-					CFD2509723F39F94003ED4E7 = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = CFD2507123F39F7A003ED4E7;
 					};
 				};
 			};
@@ -229,8 +186,6 @@
 			projectRoot = "";
 			targets = (
 				CFD2507123F39F7A003ED4E7 /* BookCar */,
-				CFD2508C23F39F94003ED4E7 /* BookCarTests */,
-				CFD2509723F39F94003ED4E7 /* BookCarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,26 +196,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */,
+				CF0FD2A223FBA67500EA6153 /* GoogleService-Info.plist in Resources */,
 				CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */,
 				CFD2508023F39F7A003ED4E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CFD2508B23F39F94003ED4E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFD2509623F39F94003ED4E7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F5EC40643047EF71F4F6EE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookCar/Pods-BookCar-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookCar/Pods-BookCar-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookCar/Pods-BookCar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A26E9B799B48D173E0C7884 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookCar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFD2506E23F39F7A003ED4E7 /* Sources */ = {
@@ -271,39 +255,11 @@
 				CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFD2508923F39F94003ED4E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFD2509223F39F94003ED4E7 /* BookCarTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CFD2509423F39F94003ED4E7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFD2509D23F39F94003ED4E7 /* BookCarUITests.m in Sources */,
+				CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CFD2508F23F39F94003ED4E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CFD2507123F39F7A003ED4E7 /* BookCar */;
-			targetProxy = CFD2508E23F39F94003ED4E7 /* PBXContainerItemProxy */;
-		};
-		CFD2509A23F39F94003ED4E7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CFD2507123F39F7A003ED4E7 /* BookCar */;
-			targetProxy = CFD2509923F39F94003ED4E7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CFD2507E23F39F7A003ED4E7 /* Main.storyboard */ = {
@@ -437,6 +393,7 @@
 		};
 		CFD250A223F39F95003ED4E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45C1502DBC0FE503A57D8B3 /* Pods-BookCar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +411,7 @@
 		};
 		CFD250A323F39F95003ED4E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FE839E3671AE3F05642F8C /* Pods-BookCar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,82 +424,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hmduc.BookCar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		CFD250A523F39F95003ED4E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 59JQB3F95L;
-				INFOPLIST_FILE = BookCarTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmduc.BookCarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookCar.app/BookCar";
-			};
-			name = Debug;
-		};
-		CFD250A623F39F95003ED4E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 59JQB3F95L;
-				INFOPLIST_FILE = BookCarTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmduc.BookCarTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookCar.app/BookCar";
-			};
-			name = Release;
-		};
-		CFD250A823F39F95003ED4E7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 59JQB3F95L;
-				INFOPLIST_FILE = BookCarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmduc.BookCarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookCar;
-			};
-			name = Debug;
-		};
-		CFD250A923F39F95003ED4E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 59JQB3F95L;
-				INFOPLIST_FILE = BookCarUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = hmduc.BookCarUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookCar;
 			};
 			name = Release;
 		};
@@ -562,24 +444,6 @@
 			buildConfigurations = (
 				CFD250A223F39F95003ED4E7 /* Debug */,
 				CFD250A323F39F95003ED4E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFD250A423F39F95003ED4E7 /* Build configuration list for PBXNativeTarget "BookCarTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFD250A523F39F95003ED4E7 /* Debug */,
-				CFD250A623F39F95003ED4E7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CFD250A723F39F95003ED4E7 /* Build configuration list for PBXNativeTarget "BookCarUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CFD250A823F39F95003ED4E7 /* Debug */,
-				CFD250A923F39F95003ED4E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
