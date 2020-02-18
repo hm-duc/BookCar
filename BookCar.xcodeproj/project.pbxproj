@@ -12,7 +12,7 @@
 		CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB1E7DF23FBE06600498563 /* NavigationBarController.m */; };
 		CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507623F39F7A003ED4E7 /* AppDelegate.m */; };
 		CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */; };
-		CFD2507D23F39F7A003ED4E7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507C23F39F7A003ED4E7 /* ViewController.m */; };
+		CFD2507D23F39F7A003ED4E7 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507C23F39F7A003ED4E7 /* LoginController.m */; };
 		CFD2508023F39F7A003ED4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2507E23F39F7A003ED4E7 /* Main.storyboard */; };
 		CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2508123F39F93003ED4E7 /* Assets.xcassets */; };
 		CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2508323F39F93003ED4E7 /* LaunchScreen.storyboard */; };
@@ -30,8 +30,8 @@
 		CFD2507623F39F7A003ED4E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CFD2507B23F39F7A003ED4E7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CFD2507C23F39F7A003ED4E7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CFD2507B23F39F7A003ED4E7 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		CFD2507C23F39F7A003ED4E7 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		CFD2507F23F39F7A003ED4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD2508123F39F93003ED4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BookCar/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		CFD2508423F39F93003ED4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +77,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CFB1E7E123FBEEFF00498563 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				CFB1E7DF23FBE06600498563 /* NavigationBarController.m */,
+				CFB1E7DE23FBE06600498563 /* NavigationBarController.h */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
+		CFB1E7E223FBEF1300498563 /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				CFD2507C23F39F7A003ED4E7 /* LoginController.m */,
+				CFD2507B23F39F7A003ED4E7 /* LoginController.h */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
 		CFD2506923F39F7A003ED4E7 = {
 			isa = PBXGroup;
 			children = (
@@ -100,15 +118,13 @@
 		CFD2507423F39F7A003ED4E7 /* BookCar */ = {
 			isa = PBXGroup;
 			children = (
+				CFB1E7E123FBEEFF00498563 /* NavigationController */,
+				CFB1E7E223FBEF1300498563 /* LoginController */,
 				CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */,
-				CFB1E7DE23FBE06600498563 /* NavigationBarController.h */,
-				CFB1E7DF23FBE06600498563 /* NavigationBarController.m */,
 				CFD2507523F39F7A003ED4E7 /* AppDelegate.h */,
 				CFD2507623F39F7A003ED4E7 /* AppDelegate.m */,
 				CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */,
 				CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */,
-				CFD2507B23F39F7A003ED4E7 /* ViewController.h */,
-				CFD2507C23F39F7A003ED4E7 /* ViewController.m */,
 				CFD2507E23F39F7A003ED4E7 /* Main.storyboard */,
 				CFD2508123F39F93003ED4E7 /* Assets.xcassets */,
 				CFD2508323F39F93003ED4E7 /* LaunchScreen.storyboard */,
@@ -251,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFD2507D23F39F7A003ED4E7 /* ViewController.m in Sources */,
+				CFD2507D23F39F7A003ED4E7 /* LoginController.m in Sources */,
 				CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
