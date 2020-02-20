@@ -28,13 +28,13 @@
         <!--Login Controller-->
         <scene sceneID="mBM-D0-hXZ">
             <objects>
-                <viewController id="Z3D-ZX-0bD" customClass="LoginController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z3D-ZX-0bD" customClass="LoginController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BOb-qa-SXw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sT-Kb-LfJ">
-                                <rect key="frame" x="57" y="439" width="301" height="65"/>
+                                <rect key="frame" x="60" y="447" width="313" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
@@ -42,65 +42,53 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXo-ui-hNO">
-                                <rect key="frame" x="57" y="524" width="138" height="66"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXo-ui-hNO">
+                                <rect key="frame" x="60" y="523" width="150" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.16842766427630312" green="0.26509428270183671" blue="0.46605812823834192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <color key="backgroundColor" red="0.16787818717307701" green="0.19736606472584634" blue="0.46605812823834192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Sign In" image="facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjh-xu-7it">
-                                <rect key="frame" x="216" y="524" width="142" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kjh-xu-7it">
+                                <rect key="frame" x="226" y="523" width="147" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.28286518912567798" green="0.756954150074443" blue="0.83508486675126914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Button">
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="Sign In" image="twitter-16">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-os-mqZ">
-                                <rect key="frame" x="57" y="724" width="149" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7ix-Bv-HSs">
+                                <rect key="frame" x="57" y="274" width="320" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New here? Sign up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lhn-oX-hzw">
-                                <rect key="frame" x="209" y="724" width="149" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7ix-Bv-HSs">
-                                <rect key="frame" x="57" y="274" width="301" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="vcF-H8-dTC"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vkz-1I-Tei">
-                                <rect key="frame" x="57" y="357" width="301" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="UtT-hl-1Dp"/>
-                                    <constraint firstAttribute="height" constant="60" id="ew0-ra-2s5"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vkz-1I-Tei">
+                                <rect key="frame" x="57" y="359" width="316" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-Lh-swc">
+                                <rect key="frame" x="51" y="717" width="137" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Forgot password?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xa-AT-Y53">
+                                <rect key="frame" x="233" y="717" width="144" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="New here? SIgn up"/>
+                                <connections>
+                                    <action selector="segueToSignUpView:" destination="Z3D-ZX-0bD" eventType="touchUpInside" id="NCM-GB-7kd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="vkz-1I-Tei" firstAttribute="top" secondItem="7ix-Bv-HSs" secondAttribute="bottom" constant="23" id="GAm-dO-w5v"/>
-                            <constraint firstItem="hyU-ed-GB1" firstAttribute="trailing" secondItem="vkz-1I-Tei" secondAttribute="trailing" constant="56" id="Lo4-5g-6cN"/>
-                            <constraint firstItem="hyU-ed-GB1" firstAttribute="trailing" secondItem="7ix-Bv-HSs" secondAttribute="trailing" constant="56" id="Okj-fc-6t9"/>
-                            <constraint firstItem="7ix-Bv-HSs" firstAttribute="top" secondItem="hyU-ed-GB1" secondAttribute="top" constant="186" id="Yh7-Yz-9m6"/>
-                            <constraint firstItem="vkz-1I-Tei" firstAttribute="leading" secondItem="hyU-ed-GB1" secondAttribute="leading" constant="57" id="p0S-mq-7fe"/>
-                            <constraint firstItem="7ix-Bv-HSs" firstAttribute="leading" secondItem="hyU-ed-GB1" secondAttribute="leading" constant="57" id="peV-53-CLO"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hyU-ed-GB1"/>
                     </view>
                     <toolbarItems>
@@ -117,6 +105,9 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CancelBarButton" destination="0Vc-QA-FOf" id="jHg-VX-Jew"/>
+                        <outlet property="FaceBookButton" destination="xXo-ui-hNO" id="bAa-c9-205"/>
+                        <outlet property="emailTxt" destination="7ix-Bv-HSs" id="Q7h-c8-ZK9"/>
+                        <outlet property="passwordTxt" destination="vkz-1I-Tei" id="EGL-cN-ZSW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwK-xS-s4G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,5 +115,9 @@
             <point key="canvasLocation" x="163.768115942029" y="89.732142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebook" width="16" height="16"/>
+        <image name="twitter-16" width="16" height="16"/>
+    </resources>
     <color key="tintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

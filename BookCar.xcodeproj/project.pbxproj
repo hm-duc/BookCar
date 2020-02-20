@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BA374D16D016BE65C837E7D6 /* libPods-BookCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */; };
-		CF0FD2A223FBA67500EA6153 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */; };
+		CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */; };
+		CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */; };
+		CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */; };
 		CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB1E7DF23FBE06600498563 /* NavigationBarController.m */; };
 		CFBC634723FCE860008AFE08 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBC634623FCE860008AFE08 /* LoginController.m */; };
-		CFBC634A23FD0B8B008AFE08 /* ItemTextFieldLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBC634923FD0B8B008AFE08 /* ItemTextFieldLoginController.xib */; };
 		CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507623F39F7A003ED4E7 /* AppDelegate.m */; };
 		CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */; };
-		CFD2507D23F39F7A003ED4E7 /* ItemTextFieldLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507C23F39F7A003ED4E7 /* ItemTextFieldLoginController.m */; };
 		CFD2508023F39F7A003ED4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2507E23F39F7A003ED4E7 /* Main.storyboard */; };
 		CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFD2508123F39F93003ED4E7 /* Assets.xcassets */; };
 		CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFD2508323F39F93003ED4E7 /* LaunchScreen.storyboard */; };
@@ -24,19 +24,19 @@
 /* Begin PBXFileReference section */
 		801BB9B759ED025629C8DDBA /* Pods-BookCar-BookCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9977D8ACBF328D128385A661 /* Pods-BookCar-BookCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.release.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.release.xcconfig"; sourceTree = "<group>"; };
-		CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF83FBFE23FE67C400030CB7 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		CFB1E7DE23FBE06600498563 /* NavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarController.h; sourceTree = "<group>"; };
 		CFB1E7DF23FBE06600498563 /* NavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarController.m; sourceTree = "<group>"; };
 		CFBC634523FCE860008AFE08 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		CFBC634623FCE860008AFE08 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
-		CFBC634923FD0B8B008AFE08 /* ItemTextFieldLoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTextFieldLoginController.xib; sourceTree = "<group>"; };
 		CFD2507223F39F7A003ED4E7 /* BookCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD2507523F39F7A003ED4E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CFD2507623F39F7A003ED4E7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		CFD2507B23F39F7A003ED4E7 /* ItemTextFieldLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemTextFieldLoginController.h; sourceTree = "<group>"; };
-		CFD2507C23F39F7A003ED4E7 /* ItemTextFieldLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemTextFieldLoginController.m; sourceTree = "<group>"; };
 		CFD2507F23F39F7A003ED4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CFD2508123F39F93003ED4E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = BookCar/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		CFD2508423F39F93003ED4E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +82,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF83FBFD23FE674300030CB7 /* SignUpController */ = {
+			isa = PBXGroup;
+			children = (
+				CF83FBFE23FE67C400030CB7 /* SignUpViewController.h */,
+				CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */,
+				CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */,
+			);
+			path = SignUpController;
+			sourceTree = "<group>";
+		};
 		CFB1E7E123FBEEFF00498563 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,21 +104,10 @@
 		CFB1E7E223FBEF1300498563 /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
-				CFBC634823FCF5CE008AFE08 /* ItemTextFileLoginController */,
 				CFBC634523FCE860008AFE08 /* LoginController.h */,
 				CFBC634623FCE860008AFE08 /* LoginController.m */,
 			);
 			path = LoginController;
-			sourceTree = "<group>";
-		};
-		CFBC634823FCF5CE008AFE08 /* ItemTextFileLoginController */ = {
-			isa = PBXGroup;
-			children = (
-				CFD2507C23F39F7A003ED4E7 /* ItemTextFieldLoginController.m */,
-				CFD2507B23F39F7A003ED4E7 /* ItemTextFieldLoginController.h */,
-				CFBC634923FD0B8B008AFE08 /* ItemTextFieldLoginController.xib */,
-			);
-			path = ItemTextFileLoginController;
 			sourceTree = "<group>";
 		};
 		CFD2506923F39F7A003ED4E7 = {
@@ -136,7 +135,7 @@
 			children = (
 				CFB1E7E123FBEEFF00498563 /* NavigationController */,
 				CFB1E7E223FBEF1300498563 /* LoginController */,
-				CF0FD2A123FBA67500EA6153 /* GoogleService-Info.plist */,
+				CF83FBFD23FE674300030CB7 /* SignUpController */,
 				CFD2507523F39F7A003ED4E7 /* AppDelegate.h */,
 				CFD2507623F39F7A003ED4E7 /* AppDelegate.m */,
 				CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */,
@@ -146,6 +145,7 @@
 				CFD2508323F39F93003ED4E7 /* LaunchScreen.storyboard */,
 				CFD2508623F39F93003ED4E7 /* Info.plist */,
 				CFD2508723F39F93003ED4E7 /* main.m */,
+				CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */,
 			);
 			path = BookCar;
 			sourceTree = "<group>";
@@ -228,9 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */,
-				CF0FD2A223FBA67500EA6153 /* GoogleService-Info.plist in Resources */,
 				CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */,
-				CFBC634A23FD0B8B008AFE08 /* ItemTextFieldLoginController.xib in Resources */,
+				CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */,
+				CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */,
 				CFD2508023F39F7A003ED4E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,10 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFBC634723FCE860008AFE08 /* LoginController.m in Sources */,
-				CFD2507D23F39F7A003ED4E7 /* ItemTextFieldLoginController.m in Sources */,
 				CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
+				CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */,
 				CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

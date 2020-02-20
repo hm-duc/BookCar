@@ -11,7 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *CancelBarButton;
+@property (weak, nonatomic) IBOutlet UIButton *FaceBookButton;
+@property (weak, nonatomic) IBOutlet UITextField *emailTxt;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTxt;
 
 @end
 
