@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@import Firebase;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginController : UIViewController
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *FaceBookButton;
 @property (weak, nonatomic) IBOutlet UITextField *emailTxt;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTxt;
+@property (weak, nonatomic) IBOutlet UILabel *Errorlabel;
 
 @end
 

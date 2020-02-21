@@ -41,6 +41,9 @@
                                 <state key="normal" title="Sign in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="SignInAction:" destination="Z3D-ZX-0bD" eventType="touchUpInside" id="hQV-gE-xOR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xXo-ui-hNO">
                                 <rect key="frame" x="60" y="523" width="150" height="58"/>
@@ -87,6 +90,13 @@
                                     <action selector="segueToSignUpView:" destination="Z3D-ZX-0bD" eventType="touchUpInside" id="NCM-GB-7kd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwy-zN-gEk">
+                                <rect key="frame" x="57" y="233" width="316" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="hyU-ed-GB1"/>
@@ -105,6 +115,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CancelBarButton" destination="0Vc-QA-FOf" id="jHg-VX-Jew"/>
+                        <outlet property="Errorlabel" destination="Mwy-zN-gEk" id="wzL-2c-OOD"/>
                         <outlet property="FaceBookButton" destination="xXo-ui-hNO" id="bAa-c9-205"/>
                         <outlet property="emailTxt" destination="7ix-Bv-HSs" id="Q7h-c8-ZK9"/>
                         <outlet property="passwordTxt" destination="vkz-1I-Tei" id="EGL-cN-ZSW"/>

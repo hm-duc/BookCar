@@ -30,5 +30,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)SignUpAction:(id)sender {
+    [[FIRAuth auth] createUserWithEmail:self.EmailTxt.text password:self.PassTxt.text completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
+        if(error != nil){
+            self.ErrorLabel.text = error.localizedDescription;
+        }else{
+            self.ErrorLabel.text = @"Sign Up Success!!";
+        }
+    }];
+}
 
 @end

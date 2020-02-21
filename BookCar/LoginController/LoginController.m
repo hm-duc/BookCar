@@ -63,5 +63,14 @@
 //    UINavigationController *signUpNav = [[UINavigationController alloc]initWithRootViewController:signUpView];
     [self.navigationController pushViewController:signUpView animated:YES];
 }
+- (IBAction)SignInAction:(id)sender {
+    [[FIRAuth auth]signInWithEmail:self.emailTxt.text password:self.passwordTxt.text completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
+        if(error != nil){
+            self.Errorlabel.text = error.localizedDescription;
+        }else{
+            self.Errorlabel.text = @"Login Success!!";
+        }
+    }];
+}
 
 @end
