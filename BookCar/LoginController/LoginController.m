@@ -8,6 +8,8 @@
 
 #import "LoginController.h"
 #import "SignUpViewController.h"
+#import "SVProgressHUD.h"
+#import "ListItemControllerViewController.h"
 @interface LoginController ()
 @end
 
@@ -64,13 +66,20 @@
     [self.navigationController pushViewController:signUpView animated:YES];
 }
 - (IBAction)SignInAction:(id)sender {
+    [SVProgressHUD showWithStatus:@"Loading..."];
     [[FIRAuth auth]signInWithEmail:self.emailTxt.text password:self.passwordTxt.text completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
         if(error != nil){
             self.Errorlabel.text = error.localizedDescription;
+            [SVProgressHUD dismiss];
         }else{
-            self.Errorlabel.text = @"Login Success!!";
+            ListItemControllerViewController *listView = [ListItemControllerViewController new];
+            [self.navigationController pushViewController:listView animated:YES];
+            [SVProgressHUD dismiss];
         }
     }];
+}
+- (IBAction)FbSignInAction:(id)sender {
+    
 }
 
 @end

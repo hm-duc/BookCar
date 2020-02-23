@@ -7,7 +7,7 @@
 //
 
 #import "SignUpViewController.h"
-
+#import "SVProgressHUD.h"
 @interface SignUpViewController ()
 
 @end
@@ -31,11 +31,14 @@
 }
 */
 - (IBAction)SignUpAction:(id)sender {
+    [SVProgressHUD showWithStatus:@"Loading..."];
     [[FIRAuth auth] createUserWithEmail:self.EmailTxt.text password:self.PassTxt.text completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
         if(error != nil){
             self.ErrorLabel.text = error.localizedDescription;
+            [SVProgressHUD dismiss];
         }else{
             self.ErrorLabel.text = @"Sign Up Success!!";
+            [SVProgressHUD dismiss];
         }
     }];
 }
