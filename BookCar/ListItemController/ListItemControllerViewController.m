@@ -7,9 +7,9 @@
 //
 
 #import "ListItemControllerViewController.h"
-#import "SVProgressHUD.h"
-@interface ListItemControllerViewController ()
-
+@interface ListItemControllerViewController (){
+    NSArray *listItem;
+}
 @end
 
 @implementation ListItemControllerViewController
@@ -17,17 +17,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [SVProgressHUD dismiss];
+    listItem = @[@"a",@"b"];
+    [self.navigationItem setHidesBackButton:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return listItem.count;
 }
-*/
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TableCell"];
+    if(cell == nil){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"TableCell"];
+    }
+    cell.textLabel.text = [listItem objectAtIndex: indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(indexPath.row == 0){
+        
+    }
+    if(indexPath.row == 1){
+        
+    }
+}
 @end
