@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A29D9612402A45D00FC076C /* ListItemControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A29D95F2402A45D00FC076C /* ListItemControllerViewController.m */; };
+		8A29D9622402A45D00FC076C /* ListItemControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A29D9602402A45D00FC076C /* ListItemControllerViewController.xib */; };
 		BA374D16D016BE65C837E7D6 /* libPods-BookCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */; };
 		CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */; };
 		CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */; };
@@ -23,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		801BB9B759ED025629C8DDBA /* Pods-BookCar-BookCarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.debug.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A29D95E2402A45D00FC076C /* ListItemControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItemControllerViewController.h; sourceTree = "<group>"; };
+		8A29D95F2402A45D00FC076C /* ListItemControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItemControllerViewController.m; sourceTree = "<group>"; };
+		8A29D9602402A45D00FC076C /* ListItemControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemControllerViewController.xib; sourceTree = "<group>"; };
 		9977D8ACBF328D128385A661 /* Pods-BookCar-BookCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.release.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF83FBFE23FE67C400030CB7 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -82,6 +87,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A29D95D2402A42C00FC076C /* ListItemController */ = {
+			isa = PBXGroup;
+			children = (
+				8A29D95E2402A45D00FC076C /* ListItemControllerViewController.h */,
+				8A29D95F2402A45D00FC076C /* ListItemControllerViewController.m */,
+				8A29D9602402A45D00FC076C /* ListItemControllerViewController.xib */,
+			);
+			path = ListItemController;
+			sourceTree = "<group>";
+		};
 		CF83FBFD23FE674300030CB7 /* SignUpController */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 				CFB1E7E123FBEEFF00498563 /* NavigationController */,
 				CFB1E7E223FBEF1300498563 /* LoginController */,
 				CF83FBFD23FE674300030CB7 /* SignUpController */,
+				8A29D95D2402A42C00FC076C /* ListItemController */,
 				CFD2507523F39F7A003ED4E7 /* AppDelegate.h */,
 				CFD2507623F39F7A003ED4E7 /* AppDelegate.m */,
 				CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */,
@@ -228,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */,
+				8A29D9622402A45D00FC076C /* ListItemControllerViewController.xib in Resources */,
 				CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */,
 				CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */,
 				CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */,
@@ -286,6 +303,7 @@
 			files = (
 				CFBC634723FCE860008AFE08 /* LoginController.m in Sources */,
 				CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */,
+				8A29D9612402A45D00FC076C /* ListItemControllerViewController.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
 				CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */,

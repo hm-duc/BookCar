@@ -6,6 +6,7 @@ target 'BookCar' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'SVProgressHUD'
   # Pods for BookCar
 end
 
