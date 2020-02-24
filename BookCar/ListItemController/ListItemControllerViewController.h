@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ListItemControllerViewController : UIViewController
+@interface ListItemControllerViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
