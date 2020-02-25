@@ -58,6 +58,16 @@
 }
 
 - (void)LogoutAction{
+//    LoginController *loginView = [LoginController new];
+    
+    UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Are You Sure Want To Logout?" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action){
+        [[FIRAuth auth] signOut:nil];
+        [self.navigationController popToRootViewControllerAnimated:kCATransitionFromRight];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancel];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
 }
-
 @end
