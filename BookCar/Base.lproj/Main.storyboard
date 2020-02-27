@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fPI-If-iOl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mnk-en-wAl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -10,7 +10,8 @@
         <!--Navigation Bar Controller-->
         <scene sceneID="T4J-w9-qAJ">
             <objects>
-                <navigationController id="fPI-If-iOl" customClass="NavigationBarController" colorLabel="IBBuiltInLabel-Green" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="fPI-If-iOl" customClass="NavigationBarController" colorLabel="IBBuiltInLabel-Green" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="lKb-h1-LQF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IZ0-3G-TEF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-696" y="90"/>
         </scene>
-        <!--Login Controller-->
+        <!--LoginView-->
         <scene sceneID="mBM-D0-hXZ">
             <objects>
-                <viewController storyboardIdentifier="LoginView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z3D-ZX-0bD" customClass="LoginController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" title="LoginView" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z3D-ZX-0bD" customClass="LoginController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BOb-qa-SXw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -128,8 +129,33 @@
             </objects>
             <point key="canvasLocation" x="163.768115942029" y="89.732142857142847"/>
         </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="yIq-hF-IC7">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="Mnk-en-wAl" customClass="SplashScreenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pUs-hd-gQd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="FDK-8T-rWj">
+                                <rect key="frame" x="144" y="381" width="127" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JDk-Fp-ZCK"/>
+                    </view>
+                    <connections>
+                        <segue destination="fPI-If-iOl" kind="show" identifier="showNav" animates="NO" id="YDt-Ku-4Cc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEA-6G-YsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1614" y="90"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="SplashImage" width="96" height="96"/>
         <image name="facebook" width="16" height="16"/>
         <image name="twitter-16" width="16" height="16"/>
     </resources>

@@ -10,13 +10,13 @@
 		8A29D9612402A45D00FC076C /* ListItemControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A29D95F2402A45D00FC076C /* ListItemControllerViewController.m */; };
 		8A29D9622402A45D00FC076C /* ListItemControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A29D9602402A45D00FC076C /* ListItemControllerViewController.xib */; };
 		BA374D16D016BE65C837E7D6 /* libPods-BookCar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */; };
+		CF7DD0672407B95800DDC05E /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7DD0662407B95800DDC05E /* SplashScreenViewController.m */; };
 		CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */; };
 		CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */; };
 		CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */; };
 		CFAE9AC024036E3300F34DB9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE9ABE24036E3300F34DB9 /* MapViewController.m */; };
 		CFAE9AC124036E3300F34DB9 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */; };
 		CFAE9AC324037D0900F34DB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAE9AC224037D0900F34DB9 /* CoreLocation.framework */; };
-		CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB1E7DF23FBE06600498563 /* NavigationBarController.m */; };
 		CFBC634723FCE860008AFE08 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBC634623FCE860008AFE08 /* LoginController.m */; };
 		CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507623F39F7A003ED4E7 /* AppDelegate.m */; };
 		CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507923F39F7A003ED4E7 /* SceneDelegate.m */; };
@@ -32,6 +32,8 @@
 		8A29D95F2402A45D00FC076C /* ListItemControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItemControllerViewController.m; sourceTree = "<group>"; };
 		8A29D9602402A45D00FC076C /* ListItemControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListItemControllerViewController.xib; sourceTree = "<group>"; };
 		9977D8ACBF328D128385A661 /* Pods-BookCar-BookCarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookCar-BookCarUITests.release.xcconfig"; path = "Target Support Files/Pods-BookCar-BookCarUITests/Pods-BookCar-BookCarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CF7DD0652407B95800DDC05E /* SplashScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashScreenViewController.h; sourceTree = "<group>"; };
+		CF7DD0662407B95800DDC05E /* SplashScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashScreenViewController.m; sourceTree = "<group>"; };
 		CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF83FBFE23FE67C400030CB7 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		CFAE9ABE24036E3300F34DB9 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		CFAE9AC224037D0900F34DB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		CFB1E7DE23FBE06600498563 /* NavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarController.h; sourceTree = "<group>"; };
-		CFB1E7DF23FBE06600498563 /* NavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarController.m; sourceTree = "<group>"; };
 		CFBC634523FCE860008AFE08 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
 		CFBC634623FCE860008AFE08 /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
 		CFD2507223F39F7A003ED4E7 /* BookCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +106,15 @@
 			path = ListItemController;
 			sourceTree = "<group>";
 		};
+		CF7DD0642407B91B00DDC05E /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CF7DD0652407B95800DDC05E /* SplashScreenViewController.h */,
+				CF7DD0662407B95800DDC05E /* SplashScreenViewController.m */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
 		CF83FBFD23FE674300030CB7 /* SignUpController */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,15 +133,6 @@
 				CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */,
 			);
 			path = MapVIewController;
-			sourceTree = "<group>";
-		};
-		CFB1E7E123FBEEFF00498563 /* NavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				CFB1E7DF23FBE06600498563 /* NavigationBarController.m */,
-				CFB1E7DE23FBE06600498563 /* NavigationBarController.h */,
-			);
-			path = NavigationController;
 			sourceTree = "<group>";
 		};
 		CFB1E7E223FBEF1300498563 /* LoginController */ = {
@@ -167,7 +167,7 @@
 		CFD2507423F39F7A003ED4E7 /* BookCar */ = {
 			isa = PBXGroup;
 			children = (
-				CFB1E7E123FBEEFF00498563 /* NavigationController */,
+				CF7DD0642407B91B00DDC05E /* SplashScreen */,
 				CFB1E7E223FBEF1300498563 /* LoginController */,
 				CF83FBFD23FE674300030CB7 /* SignUpController */,
 				8A29D95D2402A42C00FC076C /* ListItemController */,
@@ -324,12 +324,12 @@
 			files = (
 				CFBC634723FCE860008AFE08 /* LoginController.m in Sources */,
 				CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */,
+				CF7DD0672407B95800DDC05E /* SplashScreenViewController.m in Sources */,
 				8A29D9612402A45D00FC076C /* ListItemControllerViewController.m in Sources */,
 				CFAE9AC024036E3300F34DB9 /* MapViewController.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
 				CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */,
-				CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
