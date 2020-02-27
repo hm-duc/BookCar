@@ -7,6 +7,8 @@ target 'BookCar' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'SVProgressHUD'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
   # Pods for BookCar
 end
 

@@ -7,6 +7,8 @@
 //
 
 #import "ListItemControllerViewController.h"
+#import "MapViewController.h"
+#import "LoginController.h"
 @interface ListItemControllerViewController (){
     NSArray *listItem;
 }
@@ -17,8 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    listItem = @[@"a",@"b"];
+    listItem = @[@"Load list bike",@"Load MapView"];
     [self.navigationItem setHidesBackButton:YES];
+    self.navigationItem.title = @"Menu List";
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    UIImage *logoutImg = [UIImage imageNamed:@"logout-24"];
+    CGRect frameimg = CGRectMake(0, 0, logoutImg.size.width, logoutImg.size.height);
+    UIButton *logoutButton = [[UIButton alloc]initWithFrame:frameimg];
+    [logoutButton addTarget:self action:@selector(LogoutAction) forControlEvents:UIControlEventTouchUpInside];
+    
+    [logoutButton setBackgroundImage:logoutImg forState:UIControlStateNormal];
+    UIBarButtonItem *logoutItem = [[UIBarButtonItem alloc]initWithCustomView:logoutButton];
+    self.navigationItem.rightBarButtonItem = logoutItem;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -39,7 +52,22 @@
         
     }
     if(indexPath.row == 1){
-        
+        MapViewController *mapView = [MapViewController new];
+        [self.navigationController pushViewController:mapView animated:YES];
     }
+}
+
+- (void)LogoutAction{
+//    LoginController *loginView = [LoginController new];
+    
+    UIAlertController *alert =[UIAlertController alertControllerWithTitle:@"Are You Sure Want To Logout?" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action){
+        [[FIRAuth auth] signOut:nil];
+        [self.navigationController popToRootViewControllerAnimated:kCATransitionFromRight];
+    }];
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    [alert addAction:cancel];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 @end

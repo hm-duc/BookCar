@@ -67,14 +67,17 @@
 }
 - (IBAction)SignInAction:(id)sender {
     [SVProgressHUD showWithStatus:@"Loading..."];
+    [self.view setUserInteractionEnabled:NO];
     [[FIRAuth auth]signInWithEmail:self.emailTxt.text password:self.passwordTxt.text completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
         if(error != nil){
             self.Errorlabel.text = error.localizedDescription;
             [SVProgressHUD dismiss];
+            [self.view setUserInteractionEnabled:YES];
         }else{
             ListItemControllerViewController *listView = [ListItemControllerViewController new];
             [self.navigationController pushViewController:listView animated:YES];
             [SVProgressHUD dismiss];
+            [self.view setUserInteractionEnabled:YES];
         }
     }];
 }

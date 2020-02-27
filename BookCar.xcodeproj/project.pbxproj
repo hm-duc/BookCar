@@ -13,6 +13,9 @@
 		CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */; };
 		CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */; };
 		CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */; };
+		CFAE9AC024036E3300F34DB9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE9ABE24036E3300F34DB9 /* MapViewController.m */; };
+		CFAE9AC124036E3300F34DB9 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */; };
+		CFAE9AC324037D0900F34DB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAE9AC224037D0900F34DB9 /* CoreLocation.framework */; };
 		CFB1E7E023FBE06600498563 /* NavigationBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB1E7DF23FBE06600498563 /* NavigationBarController.m */; };
 		CFBC634723FCE860008AFE08 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFBC634623FCE860008AFE08 /* LoginController.m */; };
 		CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD2507623F39F7A003ED4E7 /* AppDelegate.m */; };
@@ -33,6 +36,10 @@
 		CF83FBFE23FE67C400030CB7 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		CFAE9ABD24036E3300F34DB9 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CFAE9ABE24036E3300F34DB9 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		CFAE9AC224037D0900F34DB9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CFB1E7DE23FBE06600498563 /* NavigationBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarController.h; sourceTree = "<group>"; };
 		CFB1E7DF23FBE06600498563 /* NavigationBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationBarController.m; sourceTree = "<group>"; };
 		CFBC634523FCE860008AFE08 /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAE9AC324037D0900F34DB9 /* CoreLocation.framework in Frameworks */,
 				BA374D16D016BE65C837E7D6 /* libPods-BookCar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +90,7 @@
 		834A6A15B9FC7764407589A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CFAE9AC224037D0900F34DB9 /* CoreLocation.framework */,
 				F6A06BF4B091FE79A1C61FF1 /* libPods-BookCar.a */,
 			);
 			name = Frameworks;
@@ -105,6 +114,16 @@
 				CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */,
 			);
 			path = SignUpController;
+			sourceTree = "<group>";
+		};
+		CFAE9ABC24036DD300F34DB9 /* MapVIewController */ = {
+			isa = PBXGroup;
+			children = (
+				CFAE9ABD24036E3300F34DB9 /* MapViewController.h */,
+				CFAE9ABE24036E3300F34DB9 /* MapViewController.m */,
+				CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */,
+			);
+			path = MapVIewController;
 			sourceTree = "<group>";
 		};
 		CFB1E7E123FBEEFF00498563 /* NavigationController */ = {
@@ -152,6 +171,7 @@
 				CFB1E7E223FBEF1300498563 /* LoginController */,
 				CF83FBFD23FE674300030CB7 /* SignUpController */,
 				8A29D95D2402A42C00FC076C /* ListItemController */,
+				CFAE9ABC24036DD300F34DB9 /* MapVIewController */,
 				CFD2507523F39F7A003ED4E7 /* AppDelegate.h */,
 				CFD2507623F39F7A003ED4E7 /* AppDelegate.m */,
 				CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */,
@@ -247,6 +267,7 @@
 				8A29D9622402A45D00FC076C /* ListItemControllerViewController.xib in Resources */,
 				CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */,
 				CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */,
+				CFAE9AC124036E3300F34DB9 /* MapViewController.xib in Resources */,
 				CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */,
 				CFD2508023F39F7A003ED4E7 /* Main.storyboard in Resources */,
 			);
@@ -304,6 +325,7 @@
 				CFBC634723FCE860008AFE08 /* LoginController.m in Sources */,
 				CFD2507723F39F7A003ED4E7 /* AppDelegate.m in Sources */,
 				8A29D9612402A45D00FC076C /* ListItemControllerViewController.m in Sources */,
+				CFAE9AC024036E3300F34DB9 /* MapViewController.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
 				CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */,
