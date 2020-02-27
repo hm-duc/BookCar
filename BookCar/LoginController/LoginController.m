@@ -10,13 +10,25 @@
 #import "SignUpViewController.h"
 #import "SVProgressHUD.h"
 #import "ListItemControllerViewController.h"
-@interface LoginController ()
+@interface LoginController (){
+    UIImageView *splashScreen;
+}
 @end
 
 @implementation LoginController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self.navigationController setNavigationBarHidden:YES];
+//    splashScreen = [[UIImageView alloc]initWithFrame:self.view.superview.frame];
+//    splashScreen.image = [UIImage imageNamed:@"SplashImage"];
+//    splashScreen.bounds = CGRectMake((self.view.frame.size.width/2)-(splashScreen.image.size.width)/2, (self.view.frame.size.height/2)-(splashScreen.image.size.height)/2, splashScreen.image.size.width, splashScreen.image.size.height);
+//    splashScreen.backgroundColor = [UIColor whiteColor];
+//    splashScreen.alpha = 0.7;
+//    [self.view addSubview:splashScreen];
+    
+//    [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(removeSpashScreen) userInfo:nil repeats:NO];
   
     //set Tittle navigation Bar
     self.navigationItem.title = @"Login";
@@ -35,6 +47,12 @@
 //    self.passwordTxt.leftView = imgLock;
 //    self.passwordTxt.leftViewMode = UITextFieldViewModeAlways;
 }
+
+
+//- (void)removeSpashScreen{
+//    [splashScreen removeFromSuperview];
+//
+//}
 
 /*
 #pragma mark - Navigation
