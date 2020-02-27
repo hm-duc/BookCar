@@ -15,7 +15,13 @@
 }
 @end
 
-@implementation MapViewController
+@implementation MapViewController{
+    GMSAutocompleteFilter *filter;
+    GMSAutocompleteResultsViewController *result;
+    UISearchController *searchController;
+    GMSAutocompleteTableDataSource *tableDataSource;
+//    UISearchDisplayController *searchDislayController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,31 +38,47 @@
     }
     [self.locationManager startUpdatingLocation];
     [self CustomImageSearchItem];
+    
 }
 
 - (void)ChangeNavigationBar{
     UIBarButtonItem *cancelSearchBar = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelSearchBar)];
-    UISearchBar *searchBar = [UISearchBar new];
-    [self.navigationItem setHidesBackButton:YES animated:YES];
-//    [self.navigationItem.titleView setHidden:YES];
     self.navigationItem.rightBarButtonItem = cancelSearchBar;
-    self.navigationItem.titleView = searchBar;
+    
+    
+//    UISearchBar *searchBar = [UISearchBar new];
+    [self.navigationItem setHidesBackButton:YES animated:YES];
+//    self.navigationItem.titleView = searchBar;
+    
+    
+    result = [GMSAutocompleteResultsViewController new];
+    result.delegate = self;
+    searchController = [[UISearchController alloc]initWithSearchResultsController:result];
+    [searchController.searchBar sizeToFit];
+    searchController.searchBar.searchTextField.textColor = UIColor.whiteColor;
+    self.navigationItem.titleView = searchController.searchBar;
+    searchController.hidesNavigationBarDuringPresentation = NO;
+    self.definesPresentationContext = YES;
+    [searchController.searchBar setShowsCancelButton:NO];
+//    [self autoCompleteClicked];
+    
+    tableDataSource = [GMSAutocompleteTableDataSource new];
+    tableDataSource.delegate = self;
 }
 
 - (void)cancelSearchBar{
-    [self.navigationItem.titleView setHidden:YES];
+    self.navigationItem.titleView = nil;
     [self.navigationItem setHidesBackButton:NO animated:YES];
-    
     self.navigationItem.title = @"Map View";
-//    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
     [self CustomImageSearchItem];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
     [self.locationManager stopUpdatingHeading];
     userLatitude = self.locationManager.location.coordinate.latitude;
     userLongitude = self.locationManager.location.coordinate.longitude;
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -82,5 +104,61 @@
 - (void)CustomTitleNavigationBar{
     self.navigationItem.title = @"Map View";
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+}
+
+- (void)autoCompleteClicked{
+    GMSAutocompleteViewController *autoCompleteController = [GMSAutocompleteViewController new];
+    autoCompleteController.delegate = self;
+
+    GMSPlaceField field = (GMSPlaceFieldName | GMSPlaceFieldPlaceID);
+    autoCompleteController.placeFields = field;
+
+    filter = [GMSAutocompleteFilter new];
+    filter.type = kGMSPlacesAutocompleteTypeFilterAddress;
+    autoCompleteController.autocompleteFilter = filter;
+    
+    [self presentViewController:autoCompleteController animated:YES completion:nil];
+}
+
+- (void)viewController:(GMSAutocompleteViewController *)viewController
+didAutocompleteWithPlace:(GMSPlace *)place{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)viewController:(GMSAutocompleteViewController *)viewController
+didFailAutocompleteWithError:(NSError *)error{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)wasCancelled:(GMSAutocompleteViewController *)viewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)didUpdateAutocompletePredictions:(GMSAutocompleteViewController *)viewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)tableDataSource:(GMSAutocompleteTableDataSource *)tableDataSource
+didAutocompleteWithPlace:(GMSPlace *)place{
+    [searchController setActive:NO];
+}
+
+- (void)tableDataSource:(GMSAutocompleteTableDataSource *)tableDataSource
+didFailAutocompleteWithError:(NSError *)error{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)resultsController:(GMSAutocompleteResultsViewController *)resultsController
+ didAutocompleteWithPlace:(GMSPlace *)place{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)resultsController:(GMSAutocompleteResultsViewController *)resultsController
+didFailAutocompleteWithError:(NSError *)error{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)didUpdateAutocompletePredictionsForTableDataSource:(GMSAutocompleteTableDataSource *)tableDataSource{
+    
 }
 @end

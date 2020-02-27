@@ -242,6 +242,8 @@ PODS:
   - GoogleMaps/Base (3.8.0)
   - GoogleMaps/Maps (3.8.0):
     - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
   - GoogleUtilities/AppDelegateSwizzler (6.5.1):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -291,6 +293,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - GoogleMaps
+  - GooglePlaces
   - SVProgressHUD
 
 SPEC REPOS:
@@ -311,6 +314,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleMaps
+    - GooglePlaces
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
@@ -337,6 +341,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 47fe3b8e1673e5187dfd615656a3c5034f150d69
   GoogleDataTransportCCTSupport: 36f69887fd212db6d7ef4dd45ba44523717a434e
   GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
   GoogleUtilities: 06eb53bb579efe7099152735900dd04bf09e7275
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
@@ -346,6 +351,6 @@ SPEC CHECKSUMS:
   PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 8c6d7ef1fedafa27347a2a64c89b54f0246fd7e5
+PODFILE CHECKSUM: 7282fbc24b1fc8c422cb791376487e3a9b3bd0a4
 
 COCOAPODS: 1.8.4
