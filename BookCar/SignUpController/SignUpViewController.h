@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *ErrorLabel;
 @property (weak, nonatomic) IBOutlet UITextField *EmailTxt;
 @property (weak, nonatomic) IBOutlet UITextField *PassTxt;
-
+@property (weak, nonatomic) IBOutlet UITextField *PhoneTxt;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,6 +12,7 @@
                 <outlet property="EmailTxt" destination="412-Ou-E2B" id="U1N-td-E9Q"/>
                 <outlet property="ErrorLabel" destination="0C7-HF-42X" id="AGE-Y6-etB"/>
                 <outlet property="PassTxt" destination="w3e-5Y-3zk" id="jWz-hP-cbq"/>
+                <outlet property="PhoneTxt" destination="cFw-br-8f6" id="BhM-Ur-ZUS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
