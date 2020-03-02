@@ -14,6 +14,10 @@
 		CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF83FBFB23FE60CF00030CB7 /* GoogleService-Info.plist */; };
 		CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */; };
 		CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */; };
+		CFA1B7A32408C42700C14960 /* ListCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA1B7A12408C42700C14960 /* ListCarViewController.m */; };
+		CFA1B7A42408C42700C14960 /* ListCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA1B7A22408C42700C14960 /* ListCarViewController.xib */; };
+		CFA1B7A92408D0A100C14960 /* ListCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA1B7A72408D0A100C14960 /* ListCellTableViewCell.m */; };
+		CFA1B7AA2408D0A100C14960 /* ListCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA1B7A82408D0A100C14960 /* ListCellTableViewCell.xib */; };
 		CFAE9AC024036E3300F34DB9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFAE9ABE24036E3300F34DB9 /* MapViewController.m */; };
 		CFAE9AC124036E3300F34DB9 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */; };
 		CFAE9AC324037D0900F34DB9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFAE9AC224037D0900F34DB9 /* CoreLocation.framework */; };
@@ -38,6 +42,12 @@
 		CF83FBFE23FE67C400030CB7 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		CF83FBFF23FE67C400030CB7 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		CF83FC0023FE67C400030CB7 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		CFA1B7A02408C42700C14960 /* ListCarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCarViewController.h; sourceTree = "<group>"; };
+		CFA1B7A12408C42700C14960 /* ListCarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCarViewController.m; sourceTree = "<group>"; };
+		CFA1B7A22408C42700C14960 /* ListCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCarViewController.xib; sourceTree = "<group>"; };
+		CFA1B7A62408D0A100C14960 /* ListCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListCellTableViewCell.h; sourceTree = "<group>"; };
+		CFA1B7A72408D0A100C14960 /* ListCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListCellTableViewCell.m; sourceTree = "<group>"; };
+		CFA1B7A82408D0A100C14960 /* ListCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCellTableViewCell.xib; sourceTree = "<group>"; };
 		CFAE9ABD24036E3300F34DB9 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		CFAE9ABE24036E3300F34DB9 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		CFAE9ABF24036E3300F34DB9 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
@@ -125,6 +135,27 @@
 			path = SignUpController;
 			sourceTree = "<group>";
 		};
+		CFA1B7972408AE4000C14960 /* ListBikeController */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1B7A52408D02900C14960 /* ListCellController */,
+				CFA1B7A02408C42700C14960 /* ListCarViewController.h */,
+				CFA1B7A12408C42700C14960 /* ListCarViewController.m */,
+				CFA1B7A22408C42700C14960 /* ListCarViewController.xib */,
+			);
+			path = ListBikeController;
+			sourceTree = "<group>";
+		};
+		CFA1B7A52408D02900C14960 /* ListCellController */ = {
+			isa = PBXGroup;
+			children = (
+				CFA1B7A62408D0A100C14960 /* ListCellTableViewCell.h */,
+				CFA1B7A72408D0A100C14960 /* ListCellTableViewCell.m */,
+				CFA1B7A82408D0A100C14960 /* ListCellTableViewCell.xib */,
+			);
+			path = ListCellController;
+			sourceTree = "<group>";
+		};
 		CFAE9ABC24036DD300F34DB9 /* MapVIewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +203,7 @@
 				CF83FBFD23FE674300030CB7 /* SignUpController */,
 				8A29D95D2402A42C00FC076C /* ListItemController */,
 				CFAE9ABC24036DD300F34DB9 /* MapVIewController */,
+				CFA1B7972408AE4000C14960 /* ListBikeController */,
 				CFD2507523F39F7A003ED4E7 /* AppDelegate.h */,
 				CFD2507623F39F7A003ED4E7 /* AppDelegate.m */,
 				CFD2507823F39F7A003ED4E7 /* SceneDelegate.h */,
@@ -265,7 +297,9 @@
 			files = (
 				CFD2508523F39F93003ED4E7 /* LaunchScreen.storyboard in Resources */,
 				8A29D9622402A45D00FC076C /* ListItemControllerViewController.xib in Resources */,
+				CFA1B7AA2408D0A100C14960 /* ListCellTableViewCell.xib in Resources */,
 				CFD2508223F39F93003ED4E7 /* Assets.xcassets in Resources */,
+				CFA1B7A42408C42700C14960 /* ListCarViewController.xib in Resources */,
 				CF83FBFC23FE60CF00030CB7 /* GoogleService-Info.plist in Resources */,
 				CFAE9AC124036E3300F34DB9 /* MapViewController.xib in Resources */,
 				CF83FC0223FE67C400030CB7 /* SignUpViewController.xib in Resources */,
@@ -327,8 +361,10 @@
 				CF7DD0672407B95800DDC05E /* SplashScreenViewController.m in Sources */,
 				8A29D9612402A45D00FC076C /* ListItemControllerViewController.m in Sources */,
 				CFAE9AC024036E3300F34DB9 /* MapViewController.m in Sources */,
+				CFA1B7A92408D0A100C14960 /* ListCellTableViewCell.m in Sources */,
 				CFD2508823F39F93003ED4E7 /* main.m in Sources */,
 				CFD2507A23F39F7A003ED4E7 /* SceneDelegate.m in Sources */,
+				CFA1B7A32408C42700C14960 /* ListCarViewController.m in Sources */,
 				CF83FC0123FE67C400030CB7 /* SignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
