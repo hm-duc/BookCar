@@ -12,9 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ListCarViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableList;
-@property (strong,atomic) NSArray *img;
-@property (strong,atomic) NSArray *name;
-@property (strong,atomic) NSArray *price;
+@property (strong,atomic) NSMutableArray *img;
+@property (strong,atomic) NSMutableArray *name;
+@property (strong,atomic) NSMutableArray *price;
+@property (strong,atomic) NSArray *arrayData;
 @end
 
 NS_ASSUME_NONNULL_END

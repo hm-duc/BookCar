@@ -32,6 +32,16 @@
 */
 - (IBAction)SignUpAction:(id)sender {
     [SVProgressHUD showWithStatus:@"Loading..."];
+    
+    FIRFirestore *db = [FIRFirestore firestore];
+    [[[db collectionWithPath:@"user"] documentWithPath:@"info"]setData:@{
+        @"phone" : self.PhoneTxt.text
+    }merge:YES completion:^(NSError * _Nullable error) {
+        if(error != nil){
+            self.ErrorLabel.text = error.localizedDescription;
+        }
+    }];
+    
     [[FIRAuth auth] createUserWithEmail:self.EmailTxt.text password:self.PassTxt.text completion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
         if(error != nil){
             self.ErrorLabel.text = error.localizedDescription;
@@ -41,6 +51,7 @@
             [SVProgressHUD dismiss];
         }
     }];
+    
 }
 
 @end
